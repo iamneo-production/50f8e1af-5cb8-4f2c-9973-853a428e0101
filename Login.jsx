@@ -1,4 +1,10 @@
+
+
 import {React,Component} from 'react';
+import {Link} from 'react-router-dom';
+
+import {React,Component} from 'react';
+
 class Login extends Component{
    
     render(){
@@ -14,7 +20,11 @@ class Login extends Component{
 							 <h1>Login</h1>
 						  </div>
 					</div>
+
+                   <form  method="post" name="login">
+
                    <form action="{()=>(){this.validateform()}}" method="post" name="login">
+
                            <div class="form-group">
                               <label for="exampleInputEmail1">Email address</label>
                               <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"/>
@@ -43,7 +53,11 @@ class Login extends Component{
                               </p>
                            </div>
                            <div class="form-group">
+
+                              <p class="text-center">Don't have account? <Link to='/sign-up'> Sign up here</Link></p>
+
                               <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>
+
                            </div>
                         </form>     
 				</div>
