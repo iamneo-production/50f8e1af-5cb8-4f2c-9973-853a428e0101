@@ -1,0 +1,10 @@
+.bg-image-signup{
+  
+    background: url("https://www.viewbug.com/media/mediafiles/2019/02/17/83409150_medium.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+  
+  }
